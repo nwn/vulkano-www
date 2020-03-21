@@ -23,7 +23,7 @@ use vulkano::buffer::BufferUsage;
 use vulkano::buffer::CpuAccessibleBuffer;
 
 let data = 12;
-let buffer = CpuAccessibleBuffer::from_data(device.clone(), BufferUsage::all(),
+let buffer = CpuAccessibleBuffer::from_data(device.clone(), BufferUsage::all(), false,
                                             data).expect("failed to create buffer");
 ```
 
